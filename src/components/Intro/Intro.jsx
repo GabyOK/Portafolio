@@ -1,18 +1,17 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import Female from "../../img/female.jpg";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import CV from "../Intro/CV.pdf";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -27,28 +26,28 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
-          <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
-          </span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hola! Soy</span>
+          <span>YESICA SANTOS</span>
+          <span>FULL STACK WEB DEVELOPER</span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
-        </Link>
+
+        <a href={CV} download>
+          <button className="button i-button">Descargar CV</button>
+        </a>
+
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/GabyOK">
+            <img src={Github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/yesica-gabriela-santos/">
+            <img src={LinkedIn} alt="" />
+          </a>
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={Female} alt="image" width="900px" height="840px" />
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -59,8 +58,8 @@ const Intro = () => {
         />
 
         <motion.div
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          initial={{ top: "-2%", left: "74%" }}
+          whileInView={{ left: "100%" }}
           transition={transition}
           className="floating-div"
         >
@@ -69,7 +68,7 @@ const Intro = () => {
 
         {/* animation */}
         <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
+          initial={{ left: "9rem", top: "30rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
           className="floating-div"

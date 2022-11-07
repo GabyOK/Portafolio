@@ -14,13 +14,14 @@
 }
 .i-name {
   display: flex;
+  margin-left: 3rem;
   flex-direction: column;
   gap: 0.25rem;
 }
 .i-name > :nth-child(1) {
   color: var(--black);
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .i-name > :nth-child(2) {
   color: var(--orange);
@@ -34,11 +35,13 @@
   margin-top: 10px;
 }
 .i-button {
-  width: 6rem;
-  height: 2rem;
+  margin-left: 6rem;
+  width: 9rem;
+  height: 3rem;
 }
 .i-icons {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
   display: flex;
   gap: 0rem;
 }
@@ -52,10 +55,13 @@
 .i-right {
   flex: 1;
   position: relative;
+  margin-right: 20%;
+  padding-top: 150%;
 }
 .i-right > * {
   position: absolute;
   z-index: 1;
+  border-radius: 50%;
 }
 .i-right > :nth-child(1) {
   transform: scale(0.69);
@@ -107,8 +113,8 @@
   .i-right .blur {
     display: none;
   }
-  .floating-div:nth-of-type(1){
+  .floating-div:nth-of-type(1) {
     /* display: none; */
-    top: -7rem !important;;
+    top: -7rem !important;
   }
 }
