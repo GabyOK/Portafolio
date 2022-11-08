@@ -21,27 +21,23 @@
 .i-name > :nth-child(1) {
   color: var(--black);
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-top: 40px;
 }
 .i-name > :nth-child(2) {
   color: var(--orange);
   font-weight: bold;
-  font-size: 3rem;
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
-  font-size: 14px;
+
   color: var(--gray);
   margin-top: 10px;
 }
-.i-button {
-  margin-left: 6rem;
-  width: 9rem;
-  height: 3rem;
-}
+
 .i-icons {
   margin-top: 2rem;
-  margin-left: 6rem;
+  margin-left: 14rem;
   display: flex;
   gap: 0rem;
 }

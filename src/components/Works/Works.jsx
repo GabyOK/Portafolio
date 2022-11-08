@@ -7,6 +7,9 @@ import Css from "../../img/css.png";
 import Redux from "../../img/redux.png";
 import Html from "../../img/html.png";
 import Boostrap from "../../img/bootstrap.png";
+import Sequelize from "../../img/sequelize.png";
+import Node from "../../img/node.png";
+import Express from "../../img/expres.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -68,10 +71,10 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Logoreact} alt="" />
+            <img src={Sequelize} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Javascrits} alt="" />
+            <img src={Express} alt="" />
           </div>
           <div className="w-secCircle">
             <img src={Redux} alt="" />
@@ -80,7 +83,7 @@ const Works = () => {
             <img src={Boostrap} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Html} alt="" />
+            <img src={Node} alt="" />
           </div>
         </motion.div>
       </div>

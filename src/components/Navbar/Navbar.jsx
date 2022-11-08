@@ -8,6 +8,7 @@ const navbar = () => {
       {/* left */}
       <div className="n-left">
         <Toggle />
+        <h4>Yesica Santos - Full stack Developer</h4>
       </div>
       {/* right */}
       <div className="n-right">
@@ -33,11 +34,11 @@ const navbar = () => {
                 SOBRE MI
               </Link>
             </li>
+            <Link to="contact" spy={true} smooth={true}>
+              CONTACTO
+            </Link>
           </ul>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
-          <button className="button n-button">Contacto</button>
-        </Link>
       </div>
     </div>
   );
