@@ -58,11 +58,15 @@ textarea {
   display: flex;
   gap: 2rem;
 }
-i-icons {
-  margin-top: 2rem;
-  margin-left: 3rem;
+.i-icons {
+  width: 100%;
+  margin-top: -1rem;
+  padding-right: 12rem;
+  gap: 3rem;
 }
-
+.copy {
+  margin-right: 9rem;
+}
 @media screen and (max-width: 480px) {
   .f-content {
     transform: scale(0.5);
